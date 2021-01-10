@@ -1,7 +1,7 @@
 import React from 'react';
 import './Scoreboard.css';
 
-export default function Scoreboard({ score, movesLeft }) {
+export default function Scoreboard({ score, movesLeft, handleBtnClick }) {
   let message = 'REACT MEMORY GAME';
   if (!movesLeft) message = 'Awwww, you failed 😢️';
   if (score === 6) message = 'Grejt skses! 👏️👏️👏️';
@@ -17,7 +17,9 @@ export default function Scoreboard({ score, movesLeft }) {
       <div className="message">
         <h2>{message}</h2>
         {message !== 'REACT MEMORY GAME' ? (
-          <button className="btn">TRY AGAIN</button>
+          <button onClick={handleBtnClick} className="btn">
+            TRY AGAIN
+          </button>
         ) : null}
       </div>
       <div className="score">

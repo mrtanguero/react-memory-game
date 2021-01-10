@@ -32,11 +32,21 @@ export default class App extends Component {
     currentMove: [],
     cardsOpen: Array(12).fill(false),
     timeout: null,
+    gameOver: false,
   };
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
+  handleBtnClick = () => {
+    this.setState({
+      movesLeft: 5,
+      score: 0,
+      noOfMovesPlayed: 0,
+      randomArray: shuffle([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]),
+      currentMove: [],
+      cardsOpen: Array(12).fill(false),
+      timeout: null,
+      gameOver: false,
+    });
+  };
 
   resetMove = () => {
     console.log('Ušao u glavni dio resetMove() funkcije');
@@ -53,8 +63,8 @@ export default class App extends Component {
 
   // Async zbog toga što treba da sačeka jedan setState
   onClickHandle = async (ind) => {
-    // Ako je karta već otvorena, iskuliraj klik
-    if (this.state.cardsOpen[ind]) {
+    // Ako je karta već otvorena ili je igra završena, iskuliraj klik
+    if (this.state.cardsOpen[ind] || this.state.gameOver) {
       return;
     }
 
@@ -89,14 +99,18 @@ export default class App extends Component {
           score: this.state.score + 1,
           currentMove: [],
         });
-        if (this.state.cardsOpen.every((el) => el)) console.log('Victory!');
+        if (this.state.cardsOpen.every((el) => el)) {
+          this.setState({ gameOver: true });
+        }
       } else {
         this.setState({
           timeout: setTimeout(this.resetMove, 2000),
           movesLeft: this.state.movesLeft - 1,
         });
 
-        if (!this.state.movesLeft) console.log('Game over!');
+        if (!this.state.movesLeft) {
+          this.setState({ gameOver: true });
+        }
       }
     }
   };
@@ -119,7 +133,11 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <Scoreboard score={this.state.score} movesLeft={this.state.movesLeft} />
+        <Scoreboard
+          score={this.state.score}
+          movesLeft={this.state.movesLeft}
+          handleBtnClick={this.handleBtnClick}
+        />
         {this.renderCardList()}
       </div>
     );
