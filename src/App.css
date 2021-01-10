@@ -22,7 +22,7 @@ body {
 
 .app {
   width: 600px;
-  margin: auto;
+  margin: 15vh auto;
 
   display: grid;
   grid-template-columns: repeat(4, 160px);
