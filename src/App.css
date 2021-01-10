@@ -19,3 +19,15 @@ html {
 body {
   font-family: Nunito, sans-serif;
 }
+
+.app {
+  width: 600px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  grid-template-rows: repeat(3, 160px);
+  justify-items: center;
+  align-items: center;
+  gap: 20;
+}

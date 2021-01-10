@@ -1,9 +1,13 @@
 import React from 'react';
 import './Card.css';
 
-export default function Card({ value, isRotated, onClick }) {
+export default function Card({ index, value, isRotated, onClick }) {
+  const onCardClick = () => {
+    onClick(index);
+  };
+
   return (
-    <div onClick={onClick} className={`card ${isRotated ? 'rotated' : ''}`}>
+    <div onClick={onCardClick} className={`card ${isRotated ? 'rotated' : ''}`}>
       <div className="card__side card__side--front">
         <img src={require('../img/logo.png').default} alt="Logo" />
       </div>
