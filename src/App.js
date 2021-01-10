@@ -49,7 +49,6 @@ export default class App extends Component {
   };
 
   resetMove = () => {
-    console.log('Ušao u glavni dio resetMove() funkcije');
     const newCardsOpen = [...this.state.cardsOpen];
     this.state.currentMove.forEach((move) => {
       newCardsOpen[move] = false;
@@ -79,7 +78,6 @@ export default class App extends Component {
     // Ako je prvi potez, poništi prethodne
     // (u slučaju da je treći potez kliknut prije isteka timeouta)
     if (this.state.noOfMovesPlayed === 1) {
-      console.log('No of moves === 1');
       if (this.state.timeout) {
         clearTimeout(this.state.timeout);
         this.resetMove();
