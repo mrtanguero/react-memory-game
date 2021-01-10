@@ -22,11 +22,12 @@ body {
 
 .app {
   width: 600px;
-  margin: 15vh auto;
+  margin: 40px auto;
 
   display: grid;
   grid-template-columns: repeat(4, 160px);
   grid-template-rows: repeat(3, 160px);
+  grid-auto-rows: 160px;
   justify-items: center;
   align-items: center;
   gap: 20;
