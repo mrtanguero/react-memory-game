@@ -20,9 +20,16 @@ body {
   font-family: Nunito, sans-serif;
 }
 
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app {
-  width: 600px;
-  margin: 40px auto;
+  width: 640px;
 
   display: grid;
   grid-template-columns: repeat(4, 160px);

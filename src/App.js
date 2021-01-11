@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+
 import Card from './components/Card';
-import './App.css';
 import Scoreboard from './components/Scoreboard';
+import './App.css';
 
 function shuffle(array) {
   var currentIndex = array.length,

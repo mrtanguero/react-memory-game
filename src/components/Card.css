@@ -48,6 +48,7 @@
 
 .card__side--front:hover {
   filter: brightness(1.2);
+  box-shadow: 0 8px 11px rgba(0, 0, 0, 0.4);
 }
 
 .card__side--back {
@@ -64,10 +65,16 @@
   transform: rotateY(360deg);
   overflow: hidden;
 }
-
 .card img {
-  height: 80%;
-  width: auto;
+  height: auto;
   border-radius: 5px;
   object-fit: cover;
+}
+
+.card__side--front img {
+  width: 80%;
+}
+
+.card__side--back img {
+  width: 90%;
 }
