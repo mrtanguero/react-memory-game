@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/react-memory-game/static/css/main.9d6060b6.chunk.css",
-    "main.js": "/react-memory-game/static/js/main.260bc827.chunk.js",
-    "main.js.map": "/react-memory-game/static/js/main.260bc827.chunk.js.map",
+    "main.css": "/react-memory-game/static/css/main.bbd53f42.chunk.css",
+    "main.js": "/react-memory-game/static/js/main.ae60e7bc.chunk.js",
+    "main.js.map": "/react-memory-game/static/js/main.ae60e7bc.chunk.js.map",
     "runtime-main.js": "/react-memory-game/static/js/runtime-main.dd6f553e.js",
     "runtime-main.js.map": "/react-memory-game/static/js/runtime-main.dd6f553e.js.map",
     "static/js/2.44f8ca86.chunk.js": "/react-memory-game/static/js/2.44f8ca86.chunk.js",
     "static/js/2.44f8ca86.chunk.js.map": "/react-memory-game/static/js/2.44f8ca86.chunk.js.map",
     "index.html": "/react-memory-game/index.html",
-    "static/css/main.9d6060b6.chunk.css.map": "/react-memory-game/static/css/main.9d6060b6.chunk.css.map",
+    "static/css/main.bbd53f42.chunk.css.map": "/react-memory-game/static/css/main.bbd53f42.chunk.css.map",
     "static/js/2.44f8ca86.chunk.js.LICENSE.txt": "/react-memory-game/static/js/2.44f8ca86.chunk.js.LICENSE.txt",
-    "static/media/1.png": "/react-memory-game/static/media/1.7dbebaa2.png",
-    "static/media/2.png": "/react-memory-game/static/media/2.fcf12a70.png",
-    "static/media/3.png": "/react-memory-game/static/media/3.1221f378.png",
-    "static/media/4.png": "/react-memory-game/static/media/4.6f6f6b61.png",
-    "static/media/5.png": "/react-memory-game/static/media/5.ff943c51.png",
-    "static/media/6.png": "/react-memory-game/static/media/6.b2918fcc.png",
-    "static/media/logo.png": "/react-memory-game/static/media/logo.93085597.png"
+    "static/media/1.png": "/react-memory-game/static/media/1.302a1e84.png",
+    "static/media/2.png": "/react-memory-game/static/media/2.55212b82.png",
+    "static/media/3.png": "/react-memory-game/static/media/3.fa511a18.png",
+    "static/media/4.png": "/react-memory-game/static/media/4.9cbfdd7a.png",
+    "static/media/5.png": "/react-memory-game/static/media/5.b035f7b1.png",
+    "static/media/6.png": "/react-memory-game/static/media/6.8b36e1f8.png",
+    "static/media/logo.png": "/react-memory-game/static/media/logo.6929fe5e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dd6f553e.js",
     "static/js/2.44f8ca86.chunk.js",
-    "static/css/main.9d6060b6.chunk.css",
-    "static/js/main.260bc827.chunk.js"
+    "static/css/main.bbd53f42.chunk.css",
+    "static/js/main.ae60e7bc.chunk.js"
   ]
 }
