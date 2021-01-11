@@ -38,15 +38,20 @@ export default class App extends Component {
 
   handleBtnClick = () => {
     this.setState({
+      cardsOpen: Array(12).fill(false),
       movesLeft: 5,
       score: 0,
       noOfMovesPlayed: 0,
-      randomArray: shuffle([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]),
       currentMove: [],
-      cardsOpen: Array(12).fill(false),
       timeout: null,
       gameOver: false,
     });
+    // Ovo radim da se ne bi vidio novi raspored nakratko kad se restartuje igra
+    setTimeout(() => {
+      this.setState({
+        randomArray: shuffle([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]),
+      });
+    }, 800);
   };
 
   resetMove = () => {

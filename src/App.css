@@ -1,33 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-:root {
-  --card-size: 140px;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Nunito, sans-serif;
-}
-
-#root {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .app {
   width: 640px;
 
