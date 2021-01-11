@@ -10,10 +10,11 @@
 
 :root {
   --card-size: 140px;
-  --background-color-dark: rgb(192, 192, 192);
-  --background-color-light: rgb(240, 240, 240);
+  --background-color-dark: rgb(236, 126, 0);
+  --background-color-light: rgb(255, 198, 93);
   --main-color-dark: rgb(0, 56, 70);
   --main-color-light: rgb(0, 162, 211);
+  --card-border-color: #f1f1f1;
 }
 
 html {

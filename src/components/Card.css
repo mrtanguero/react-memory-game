@@ -36,7 +36,7 @@
 }
 
 .card__side--front {
-  border: 8px solid var(--background-color-light);
+  border: 8px solid var(--card-border-color);
   background-image: linear-gradient(
     to bottom,
     var(--main-color-light),
