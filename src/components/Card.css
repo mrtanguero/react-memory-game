@@ -36,10 +36,11 @@
 }
 
 .card__side--front {
+  border: 8px solid var(--background-color-light);
   background-image: linear-gradient(
-    to bottom right,
-    rgb(250, 109, 84),
-    rgb(148, 26, 26)
+    to bottom,
+    var(--main-color-light),
+    var(--main-color-dark)
   );
   /* transform: rotateY(0deg); */
   font-size: 2em;

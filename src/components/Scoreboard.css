@@ -8,10 +8,10 @@
   height: 140px;
   background-image: linear-gradient(
     to bottom,
-    rgb(250, 109, 84),
-    rgb(148, 26, 26)
+    var(--main-color-light),
+    var(--main-color-dark)
   );
-  border: 10px solid rgb(148, 26, 26);
+  border: 10px solid var(--main-color-dark);
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4),
     inset 0 3px 10px rgba(255, 255, 255, 0.8);
@@ -50,7 +50,7 @@ span {
   padding: 10px;
 
   font-weight: 900;
-  color: rgb(148, 26, 26);
+  color: var(--main-color-dark);
 
   border-radius: 5px;
   outline: none;
@@ -60,7 +60,7 @@ span {
 
 .btn:hover {
   cursor: pointer;
-  background-color: rgb(148, 26, 26);
+  background-color: var(--main-color-dark);
   color: white;
   transform: scale(1.02);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
