@@ -2,10 +2,12 @@
   width: 640px;
 
   display: grid;
-  grid-template-columns: repeat(4, 160px);
-  grid-template-rows: repeat(3, 160px);
-  grid-auto-rows: 160px;
+  grid-template-columns: repeat(4, var(--card-size));
+  grid-template-rows: repeat(4, var(--card-size));
+  /* grid-auto-rows: 160px; */
   justify-items: center;
   align-items: center;
-  gap: 20;
+  justify-content: center;
+
+  gap: var(--gap-size);
 }
